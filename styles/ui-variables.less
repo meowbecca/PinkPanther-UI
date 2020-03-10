@@ -10,12 +10,14 @@
 // Try to edit some of the values below to see your theme change.
 // A good start is to change the color of the `@base-background-color` variable.
 
+// theme default color: white/pink/
+
 
 // Text Colors
-@text-color:           hsl(0,0%,86%);
-@text-color-subtle:    hsl(0,0%,50%);
-@text-color-highlight: hsl(0,0%,94%);
-@text-color-selected:  hsl(0,0%,100%);
+@text-color:           hsl(0,0%,27%);
+@text-color-subtle:    hsl(0,0%,52%);
+@text-color-highlight: hsl(326,100%,76%);
+@text-color-selected:  rgb(255,62,151);
 
 @text-color-info:    hsl(219,  79%, 66%);
 @text-color-success: hsl(140,  44%, 62%);
@@ -33,9 +35,9 @@
 @app-background-color:       darken(@base-background-color, 5%);
 
 // Base colors
-@base-background-color: hsl(225, 40%, 15%);
-@base-border-color:     darken(@base-background-color, 8%);
-
+@base-background-color: hsl(0,0%,100%);
+// @base-border-color:     darken(@base-background-color, 58%);
+@base-border-color: rgb(255,119,183);
 // Component colors
 @pane-item-background-color: @base-background-color;
 @pane-item-border-color:     @base-border-color;
@@ -60,17 +62,21 @@
 @button-background-color-selected: @button-background-color-hover;
 @button-border-color:              @base-border-color;
 
-@tab-color: hsl(228, 53%, 51%);
-@tab-bar-background-color:    @base-background-color;
-@tab-bar-border-color:        @base-border-color;
-@tab-background-color:        lighten(@tab-color, 10%);
+@tab-color: rgba(255,244,251,.7);
+// @tab-bar-background-color:    @base-background-color;
+@tab-bar-background-color:    rgb(255,173,205);
+// @tab-bar-border-color:        @base-border-color;
+@tab-bar-border-color:        rgb(255,142,174);
+@tab-background-color:        darken(@tab-color, 5%);
 @tab-background-color-active: @tab-color;
 @tab-border-color:            @base-border-color;
 
-@tree-view-background-color: @base-background-color;
+// @tree-view-background-color: @base-background-color;
+@tree-view-background-color: rgb(255,199,218);
 @tree-view-border-color:     @base-border-color;
 
 // Site colors
+// @ui-site-color-1: hsl(208, 100%, 50%); // blue
 @ui-site-color-1: hsl(208, 100%, 50%); // blue
 @ui-site-color-2: hsl(160,  70%, 42%); // green
 @ui-site-color-3: hsl(32,   60%, 50%); // orange
@@ -81,7 +87,7 @@
 @font-size: 12px;
 @input-font-size: 14px;
 
-@disclosure-arrow-size: 12px;
+@disclosure-arrow-size: 15px;
 
 @component-padding: 10px;
 @component-icon-padding: 5px;
@@ -91,11 +97,11 @@
 @tab-height: 30px;
 
 // Misc
-@component-border-radius: 2px;
-@font-family: '.SFNSText-Regular', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
+@component-border-radius: 5px;
+@font-family: 'Roboto Mono', 'SF UI Text', 'Lucida Grande', 'Segoe UI', Ubuntu, Cantarell, sans-serif;
 
 
 // shadow
-@deep-shadow: 0 15px 40px rgba(0,0,0,.6);
-@deep-shadow--reverse: 0 -15px 40px rgba(0,0,0,.4);
-@element-shadow: 0 18px 30px rgba(0,0,0,.5);
+@deep-shadow: 0 3px 20px rgba(252,173,216,.6);
+@deep-shadow--reverse: 0 -15px 5px rgba(237,234,234,.4);
+@element-shadow: 0 5px 20px rgba(251,245,245,.5);
